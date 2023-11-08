@@ -1,0 +1,206 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildlife</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" 
+rel="stylesheet">
+
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+rel="stylesheet">
+
+</head>
+<body>
+   <section class="header">
+      <nav>
+	    <a href="index.html"><img src="images/logo2.png"></a>
+		<div class="nav-links" id="navLinks">
+		<i class="fa fa-times" onclick="hideMenu()"></i>
+		  <ul> 
+		    <li><a href="index.html">HOME</a></li>
+			<li><a href="#">ABOUT</a></li>
+			<li><a href="#">photo</a></li>
+			<li><a href="#">BLOG</a></li>
+			<li><a href="#">CONTACT</a></li>
+          </ul>
+		</div> 
+		<i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <style>
+        .header
+          {
+          min-height: 100vh;
+          width: 100%;
+          background-image: linear-gradient(rgba(10,0,0,0),rgba(0,0,55,00.7)),url(images/leoperd.jpg);
+          background-position: center;
+          background-size: cover;
+          position: relative;
+          } 
+        </style>
+
+<div class="text-box">
+  <h1>Wildlife Photography</h1>
+  <p>The love for all living creatures is the most noble attribute of man...
+  </p>
+  
+</div>	  
+   
+   </section>
+
+
+
+
+   
+
+
+
+
+   <section class="photo">
+      <h1>About wildlife Photography</h1>
+     <p> Capturing Faunas and Floras... </p>
+     
+     <div class="row1">
+       <div class="type1">
+        <a href="#"><img src="images/w1.jpg"alt="Image" width="400" height="300"></a>
+       </div>
+       
+                                                                      
+      <div class="type1">
+         <h3>Wildlife Snapping...</h3>
+           <p>Wildlife photography is the art of capturing images of wild animals in their natural habitats. It requires patience, skill, and a deep understanding of animal behavior to create stunning images that showcase the beauty and diversity of the natural world. 
+            Wildlife photographers use a variety of techniques and equipment to capture the images, often relying on telephoto lenses and high-speed cameras to capture fast-moving animals. </p>	
+        
+       </div>
+  
+       <div class="type1">
+        <a href="#"><img src="images/w2.jpg"alt="Image" width="400" height="300"></a>
+       </div>
+  
+     </div>	   
+     
+     <div class="type1">
+      <h3>Challenges In Wildlife Capturing</h3>
+        <p>One of the key challenges of wildlife photography is finding and approaching the animals in their natural habitats.
+           This often requires the photographer to spend hours or even days in the field, observing and waiting for the perfect moment to capture the image.
+           They must also be careful not to disturb or endanger the animals or their habitats, as wildlife conservation is an important consideration in this genre of photography.
+     </p>		
+    </div>
+
+
+     <div class="row1">                                                       
+       
+   
+        <div class="type1">
+         <a href="#"><img src="images/w3.jpg"alt="Image" width="400" height="300"></a>
+        </div>
+
+        <div class="type1">
+         <a href="#"><img src="images/w4.jpg"alt="Image" width="400" height="300"></a>
+        </div>
+        <div class="type1">
+         <a href="#"><img src="images/w6.jpg"alt="Image" width="400" height="300"></a>
+        </div>
+  
+  
+        
+        
+      </div>	   
+  
+
+      <div class="type1">
+        </p>Another challenge of wildlife photography is capturing the right light and composition. The time of day and weather conditions can greatly impact the mood and quality of the image, and the photographer must be able to adapt to changing conditions.
+         They must also consider the placement of the animal within the frame, and the use of foreground and background elements to create a sense of depth and context. </p>		
+       </div>
+
+
+
+      <div class="row1">
+        <div class="type1">
+         <a href="#"><img src="images/w8.jpg"alt="Image" width="400" height="300"></a>
+        </div>
+        
+                                                                       
+       <div class="type1">
+            <p>Despite these challenges, wildlife photography can be a highly rewarding pursuit, allowing the photographer to capture and share the beauty and diversity of the natural world. It requires a combination of technical skill, creativity, and a love for the natural world. 
+              By capturing images of wild animals in their natural habitats, wildlife photography can inspire people to appreciate and protect the environment and the creatures that call it home. </p>	
+        </div>
+   
+        <div class="type1">
+         <a href="#"><img src="images/w12.jpg"alt="Image" width="400" height="300"></a>
+        </div>
+        
+      </div>	   
+  </section>	
+
+
+
+
+
+
+
+
+
+
+
+  <footer>
+	<div class="about-us">
+	  <h3>About Us</h3>
+	  <p>We are a team of passionate photographers who love to capture the beauty of the world through our lenses.</p>
+	</div>
+	<div class="links">
+	  <h3>Links</h3>
+	  <ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Gallery</a></li>
+		<li><a href="#">Services</a></li>
+		<li><a href="#">Blog</a></li>
+	  </ul>
+	</div>
+	<div class="contact-us">
+    <h3>Contact Us</h3>
+		<p>No.18 Plalay Road</p>
+		<p>Jaffna, Sri Lanka.</p>
+		<p>Phone: 0212229813</p>
+		<p>Email: ND@photography.com</p>
+	</div> <div id="app">
+    <li v-for="comment in comments">
+      <strong>{{ comment.name }}</strong> - {{ comment.comment }}
+      <button class="btn btn-danger" @click="deleteComment(comment)">Delete</button>
+    </li>
+    <div class="row">
+      <div class="col-md-8">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" class="form-control" id="name" v-model="name">
+        </div>
+        <div class="form-group">
+          <label for="comment">Comment:</label>
+          <textarea class="form-control" id="comment" rows="4" v-model="comment"></textarea>
+        </div>
+        <button class="btn btn-primary" v-on:click="addComment()" style="margin-left: 60%; margin-top: 10%;">Add
+          Comment</button>
+      </div>
+    </div>
+
+   
+
+
+
+</footer>
+<div class="foot">
+	<div class="social-icons">
+	  <a href="#" target="_blank"><img src="images/fb.png" alt="Image" width="40" height="30"></a>
+	  <a href="#" target="_blank"><img src="images/insta.png" alt="Image" width="40" height="30"></a>
+	  <a href="#" target="_blank"><img src="images/twi.png" alt="Image" width="40" height="30"></a>
+	  <a href="#" target="_blank"><img src="images/pic.png" alt="Image" width="40" height="30"></a>
+	</div>
+	<div class="rights-reserved">
+	  <p>&copy; 2023 Photography Inc. All Rights Reserved.</p>
+	</div>
+</div>

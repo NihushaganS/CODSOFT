@@ -365,12 +365,12 @@ h3
  }
 
 
-/*-------------- Chat up -------------*/
+
 
 
 {box-sizing: border-box;}
 
-/* Button used to open the chat form - fixed at the bottom of the page */
+
 .open-button {
   background-color: #555;
   color: white;
@@ -384,7 +384,7 @@ h3
   width: 280px;
 }
 
-/* The popup chat - hidden by default */
+
 .form-popup {
   display: none;
   position: fixed;
@@ -395,7 +395,7 @@ h3
   flex-basis: 32%;
 }
 
-/* Add styles to the form container */
+
 .form-container {
   max-width: 300px;
   padding: 10px;
@@ -405,7 +405,7 @@ h3
   
 }
 
-/* Full-width textarea */
+
 .form-container textarea {
   width: 100%;
   padding: 15px;
@@ -416,13 +416,13 @@ h3
   min-height: 200px;
 }
 
-/* When the textarea gets focus, do something */
+
 .form-container textarea:focus {
   background-color: #ddd;
   outline: none;
 }
 
-/* Set a style for the submit/login button */
+
 .form-container .btn {
   background-color: #04AA6D;
   color: white;
@@ -435,13 +435,13 @@ h3
   opacity: 0.8;
 }
 
-/* Add a red background color to the cancel button */
+
 .form-container .cancel 
 {
   background-color: red;
 }
 
-/* Add some hover effects to buttons */
+
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
 }

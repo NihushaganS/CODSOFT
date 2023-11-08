@@ -173,20 +173,7 @@ rel="stylesheet">
       <strong>{{ comment.name }}</strong> - {{ comment.comment }}
       <button class="btn btn-danger" @click="deleteComment(comment)">Delete</button>
     </li>
-    <div class="row">
-      <div class="col-md-8">
-        <div class="form-group">
-          <label for="name">Name:</label>
-          <input type="text" class="form-control" id="name" v-model="name">
-        </div>
-        <div class="form-group">
-          <label for="comment">Comment:</label>
-          <textarea class="form-control" id="comment" rows="4" v-model="comment"></textarea>
-        </div>
-        <button class="btn btn-primary" v-on:click="addComment()" style="margin-left: 60%; margin-top: 10%;">Add
-          Comment</button>
-      </div>
-    </div>
+    
 
    
 

@@ -1,0 +1,150 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flickr</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" 
+rel="stylesheet">
+
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+rel="stylesheet">
+
+</head>
+<body>
+   <section class="header">
+      <nav>
+	    <a href="index.html"><img src="images/logo2.png"></a>
+		<div class="nav-links" id="navLinks">
+		  <ul> 
+		    <li><a href="index.html">HOME</a></li>
+			<li><a href="#">ABOUT</a></li>
+			<li><a href="">photo</a></li>
+			<li><a href="#">BLOG</a></li>
+			<li><a href="#">CONTACT</a></li>
+          </ul>
+		</div> 
+		<i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+<div class="text-box">
+  <h1>Flickr</h1>
+  <p>Time is free, but it's priceless.
+	 You can't own it, but you can use it. You can't keep it, but you can spend it.
+	  Once you've lost it you can never get it back.So make your time productively...
+  </p>
+  
+</div>	  
+   
+   </section>
+ 
+
+   
+
+<section class="photo">
+    <h1>I am a Nature Photographer</h1>
+	<p> There Are So Many Varieties of Nature Photography</p>
+	
+	<div class="row1">
+	  <div class="type">
+	    <h3>Landscape</h3>
+		   <p>Landscape photography is capturing an image that embodies the spirit of the outdoors. 
+			  It carries a sense of being there to see something incredible. When viewers look at your work, their hearts should jump. You want them to feel the same emotions that you felt, standing in the middle of nature and bringing back something amazing.
+		</p>
+		<a href="landscape.html" target="_self"> <button onclick="" class="btn">view more</button></a>
+			                 
+	  </div>
+	  <div class="type">
+		<a href="index.html"><img src="images/camera.jpg"></a>
+	  </div>
+                                                                    
+    <div class="type">
+	    <h3>Wildlife</h3>
+		   <p>It's a genre of photography that captures animals living in the wild. 
+			Sometimes this involves human-wildlife conflicts, which is a particularly “hot” area of conservation photography right now. </p>	
+			<a href="wildlife.html" target="_self"> <button onclick="" class="btn">view more</button></a>
+	  </div>
+	</div>
+
+	  	<div class="type">
+	    <h3>Macro</h3>
+		   <p>Macro photography is all about showcasing a subject larger than it is in real life — an extreme 
+		</p>		
+		<a href="macro.html" target="_self"> <button onclick="" class="btn">view more</button></a>	
+	  </div>
+	  
+     
+      <div class="type">
+	    <h3>Underwater</h3>
+		   <p>Underwater photography is a specialized form of photography that involves taking pictures underwater. This can be done using a variety of different camera types, including film cameras, digital cameras, and even smartphones.
+			Underwater photography can be used to capture images of marine life, coral reefs, shipwrecks, and other underwater subjects </p>
+			<a href="underwater.html" target="_self"> <button onclick="" class="btn">view more</button></a>		
+	     
+</section>	
+
+
+
+<button class="open-button" onclick="openForm()">Chat</button>
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Chat with US</h1>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+
+<script>
+function openForm() 
+ {
+  document.getElementById("myForm").style.display = "block";
+ }
+
+function closeForm()
+ {
+  document.getElementById("myForm").style.display = "none";
+ }
+</script>  
+  <footer>
+	<div class="about-us">
+	  <h3>About Us</h3>
+	  <p>We are a team of passionate photographers who love to capture the beauty of the world through our lenses.</p>
+	</div>
+	<div class="links">
+	  <h3>Links</h3>
+	  <ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="index.html">Gallery</a></li>
+		<li><a href="index.html">Services</a></li>
+		<li><a href="index.html">Blog</a></li>
+	  </ul>
+	</div>
+	<div class="contact-us">
+	  <h3>Contact Us</h3>
+	  <p>B23, Handaganawa</p>
+	  <p>Dambulla, Sri Lanka.</p>
+	  <p>Phone: 0312229813</p>
+	  <p>Email: flickr@photography.com</p>
+	</div>
+
+</footer>
+<div class="foot">
+	<div class="social-icons">
+	  <a href="#" target="_self"><img src="images/fb.png" alt="Image" width="40" height="30"></a>
+	  <a href="#" target="_self"><img src="images/insta.png" alt="Image" width="40" height="30"></a>
+	  <a href="#" target="_self"><img src="images/twi.png" alt="Image" width="40" height="30"></a>
+	  <a href="#" target="_self"><img src="images/pic.png" alt="Image" width="40" height="30"></a>
+	</div>
+	<div class="rights-reserved">
+	  <p>&copy; 2023 Photography Inc. All Rights Reserved.</p>
+	</div>
+</div>
